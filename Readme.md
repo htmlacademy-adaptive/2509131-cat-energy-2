@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Екатерина Машкина](https://up.htmlacademy.ru/adaptive-individual/2/user/2509131).
-* Наставник: [Артём Картавый](https://htmlacademy.ru/profile/artem_k).
+* Наставник: `Неизвестно`.
 
 ---
 
