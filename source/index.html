@@ -1,13 +1,48 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Название проекта</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
-  </head>
-  <body class="page__body">
-    <header class="header">Шапка</header>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Функциональное питание для котов "Cat Energy"</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <a class="main-header__logo">
+      <img class="logo__image" src="images/logo-mobile.svg" width="33" height="38" alt="Cat Energy.">
+      <span class="logo__name">
+        <b class="name__first-word">Cat</b>
+        <span class="name__second-word">energy</span>
+      </span>
+    </a>
+    <nav class="nav">
+      <button class="nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="nav__wrapper">
+        <ul class="nav__list">
+          <li class="list__item list__item--current">
+            <a class="item__link">
+              Главная
+            </a>
+          </li>
+          <li class="list__item list__item--current">
+            <a class="item__link" href="#">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="list__item list__item--current">
+            <a class="item__link" href="form.html">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+</body>
+
 </html>
