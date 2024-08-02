@@ -1,21 +1,5 @@
-.main-products {
-
-}
-
-.main-products__wrapper {
-
-}
-
 .main-products__list {
   list-style: none;
-}
-
-.main-products__card {
-
-}
-
-.main-products__link-img {
-
 }
 
 .main-products__link-title {
@@ -23,7 +7,7 @@
 }
 
 .main-products__item-title {
-  font-family: "Oswald";
+  font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -44,10 +28,6 @@
   font-size: 12px;
   line-height: 16px;
   text-align: center;
-}
-
-.main-products__show-more {
-
 }
 
 .main-products__show-more-title {
