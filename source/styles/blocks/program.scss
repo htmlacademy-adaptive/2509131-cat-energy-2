@@ -2,6 +2,10 @@
   list-style: none;
 }
 
+.program__item {
+  background-color: $bg-light-gray;
+}
+
 .program__title {
   font-family: $secondary-font;
   font-size: 24px;

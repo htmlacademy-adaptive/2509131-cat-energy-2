@@ -27,10 +27,17 @@
   color: #444444;
 }
 
+.add-products__gift {
+  background-image: url("../../images/gift-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-color: $bg-basic-green;
+  background-size: 280px 290px;
+}
+
 .add-products__gift-title {
   font-family: $primary-font;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  // color: #ffffff;
+  color: #ffffff;
 }

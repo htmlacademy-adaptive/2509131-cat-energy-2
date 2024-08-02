@@ -7,3 +7,15 @@
     font-display: swap;
   }
 }
+
+@mixin button {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  background-color: $bg-basic-green;
+  padding: 10px 64px;
+  text-transform: uppercase;
+  text-decoration: none;
+}

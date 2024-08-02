@@ -1,45 +1,22 @@
 .button {
-  font-family: $secondary-font;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: #ffffff;
-  background-color: $bg-basic-green;
-  padding: 10px 63.5px;
-  text-transform: uppercase;
-  text-decoration: none;
+  @include button;
 }
 
 .button--big {
-  font-family: $secondary-font;
+  @include button;
   font-size: 20px;
   line-height: 26px;
-  text-align: center;
-  color: #ffffff;
-  background-color: $bg-basic-green;
   padding: 10px 109px;
 }
 
 .button--order {
-  font-family: $secondary-font;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  color: #ffffff;
-  background-color: $bg-basic-green;
+  @include button;
   padding: 10px 109px;
-  text-transform: uppercase;
-  text-decoration: none;
 }
 
 .button--show-all {
-  font-family: $secondary-font;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
+  @include button;
   color: $base-color-text;
   background-color: #f2f2f2;
   padding: 10px 95px;
-  text-transform: uppercase;
-  text-decoration: none;
 }
