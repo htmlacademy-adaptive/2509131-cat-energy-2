@@ -1,0 +1,43 @@
+.add-products__title {
+  font-family: $secondary-font;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+}
+
+.add-products__list {
+  list-style: none;
+}
+
+.add-products__item {
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.add-products__item-description {
+  font-family: $primary-font;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: lowercase;
+  color: #444444;
+}
+
+.add-products__gift {
+  background-image: url("../../images/gift-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-color: $bg-basic-green;
+  background-size: 280px 290px;
+}
+
+.add-products__gift-title {
+  font-family: $primary-font;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+}

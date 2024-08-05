@@ -1,0 +1,22 @@
+.button {
+  @include button;
+}
+
+.button--big {
+  @include button;
+  font-size: 20px;
+  line-height: 26px;
+  padding: 10px 109px;
+}
+
+.button--order {
+  @include button;
+  padding: 10px 109px;
+}
+
+.button--show-all {
+  @include button;
+  color: $base-color-text;
+  background-color: #f2f2f2;
+  padding: 10px 95px;
+}

@@ -1,0 +1,13 @@
+.nav__list {
+  list-style: none;
+}
+
+.nav__link {
+  font-family: $secondary-font;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+}
