@@ -30,6 +30,12 @@
   text-align: center;
 }
 
+.main-products__show-more {
+  background-image: url("../../icons/stack.svg#plus");
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+}
+
 .main-products__show-more-title {
   font-family: $secondary-font;
   font-size: 16px;

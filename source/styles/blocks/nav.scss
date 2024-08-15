@@ -11,3 +11,20 @@
   text-transform: uppercase;
   text-align: center;
 }
+
+.nav__toggle {
+  background-color: #ffffff;
+  background-image: url("../../icons/stack.svg#burger-menu");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  width: 24px;
+  height: 24px;
+  border: none;
+}
+
+.nav__toggle--close {
+  background-image: url("../../icons/stack.svg#close-button");
+  background-size: 18px 18px;
+  width: 18px;
+  height: 18px;
+}
