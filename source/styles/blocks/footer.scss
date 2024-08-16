@@ -11,37 +11,43 @@
   text-decoration: none;
   color: $base-color-text;
   position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    width: 27px;
-    height: 34px;
-    background-image: url("../../icons/stack.svg#html-academy-logo");
-  }
 }
 
 .footer__socials-link {
-  background-color: #666666;
   width: 28px;
   height: 22px;
   display: block;
 }
 
 .footer__socials-link--vkontakte {
-  mask-image: url("../../icons/stack.svg#vkontakte");
-  width: 28px;
-  height: 28px;
+  &::after {
+    content: "";
+    display: block;
+    mask-image: url("../../icons/stack.svg#vkontakte");
+    width: 28px;
+    height: 28px;
+    background-color: #666666;
+  }
 }
 
 .footer__socials-link--youtube {
-  mask-image: url("../../icons/stack.svg#youtube");
-  width: 28px;
-  height: 28px;
+  &::after {
+    content: "";
+    display: block;
+    mask-image: url("../../icons/stack.svg#youtube");
+    width: 28px;
+    height: 28px;
+    background-color: #666666;
+  }
 }
 
 .footer__socials-link--telegram {
-  mask-image: url("../../icons/stack.svg#telegram");
-  width: 28px;
-  height: 28px;
+  &::after {
+    content: "";
+    display: block;
+    mask-image: url("../../icons/stack.svg#telegram");
+    width: 28px;
+    height: 28px;
+    background-color: #666666;
+  }
 }
