@@ -9,3 +9,56 @@
 .features__list {
   list-style: none;
 }
+
+.features__item {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: $bg-basic-green;
+    background-size: 60px 60px;
+  }
+}
+
+.features__item--nutrients {
+  position: relative;
+
+  &::before {
+    background-image: url("../../icons/stack.svg#leaf");
+    background-size: 30px 32px;
+    background-repeat: no-repeat;
+  }
+}
+
+.features__item--powder {
+  position: relative;
+
+  &::before {
+    background-image: url("../../icons/stack.svg#glass");
+    background-size: 26px 29px;
+    background-repeat: no-repeat;
+  }
+}
+
+.features__item--replace {
+  position: relative;
+
+  &::before {
+    background-image: url("../../icons/stack.svg#tablewear");
+    background-size: 25px 30px;
+    background-repeat: no-repeat;
+  }
+}
+
+.features__item--changes {
+  position: relative;
+
+  &::before {
+    background-image: url("../../icons/stack.svg#clock");
+    background-size: 26px 31px;
+    background-repeat: no-repeat;
+  }
+}
