@@ -16,3 +16,11 @@
   font-family: inherit;
   text-transform: uppercase;
 }
+
+.owner-contacts__input--email {
+  background-image: url("../../icons/stack.svg#email");
+}
+
+.owner-contacts__input--tel {
+  background-image: url("../../icons/stack.svg#phone");
+}
