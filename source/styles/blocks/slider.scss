@@ -1,5 +1,13 @@
 .slider__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.slider__item {
+  width: 280px;
+  height: 256px;
 }
 
 .slider__button {

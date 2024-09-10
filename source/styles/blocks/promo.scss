@@ -1,8 +1,16 @@
+.promo {
+  min-height: 480px;
+  text-align: center;
+}
+
 .promo__wrapper {
   background-image: url("../../images/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-color: $bg-basic-green;
+  background-color: rgba(104, 183, 56, 0.85);
+  background-blend-mode: overlay;
   background-size: 320px 302px;
+  min-height: 302px;
+  text-align: center;
 }
 
 .promo__title {
