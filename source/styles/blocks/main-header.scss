@@ -24,8 +24,10 @@
   }
 }
 
-.main-header__link {
-  display: flex;
+.main-header__link-logo {
   align-items: center;
 }
 
+.main-header__link-name {
+  align-self: center;
+}
