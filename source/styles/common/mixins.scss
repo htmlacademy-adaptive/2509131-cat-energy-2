@@ -15,7 +15,9 @@
   text-align: center;
   color: #ffffff;
   background-color: $bg-basic-green;
-  padding: 10px 64px;
   text-transform: uppercase;
   text-decoration: none;
+  min-width: calc(100vw - 40px);
+  padding-top: 10px;
+  padding-bottom: 10px;
 }

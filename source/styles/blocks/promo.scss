@@ -2,19 +2,73 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  min-height: 480px;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 110px;
+    min-height: 552px;
+    margin-bottom: 82px;
+    justify-content: flex-start;
+    text-align: left;
+  }
+}
+
+.promo::after {
+  content: "";
+  position: absolute;
   background-image: linear-gradient(0deg, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-color: rgba(104, 183, 56, 0.85);
+  background-position: center top;
   background-size: contain;
+  min-height: 302px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+    background-color: #ffffff;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(0deg, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/index-background-desktop@1x.jpg");
+    background-position: right top;
+    left: 50%;
+    top: -114px;
+    height: 694px;
+    width: 720px;
+  }
 }
 
 .promo__title {
   font-family: $secondary-font;
   font-size: 36px;
   line-height: 36px;
+  font-weight: 400;
   text-align: center;
   color: #ffffff;
+  padding: 27px 35px 25px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+    padding: 65px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    padding-left: 120px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-top: 110px;
+    padding-left: 80px;
+    min-width: 414px;
+    margin-bottom: 40px;
+  }
 }
 
 .promo__slogan {
@@ -24,4 +78,44 @@
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    padding-left: 120px;
+    padding-bottom: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+    margin-bottom: 52px;
+  }
+}
+
+.promo__image {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 32px;
+    right: 331px;
+  }
+}
+
+.promo__select-button {
+  @media (min-width: $tablet-width) {
+    min-width: 244px;
+    position: absolute;
+    bottom: 526px;
+    left: 120px;
+    padding-top: 14px;
+    padding-left: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+  }
 }

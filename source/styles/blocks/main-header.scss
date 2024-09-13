@@ -1,26 +1,39 @@
 .main-header {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   position: relative;
-  margin: 0;
+  margin: 13px 20px 14px;
   padding: 0;
-  height: 66px;
+  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    align-items: center;
+    gap: 94px;
+    margin: 25px 34px 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 55px 110px 0;
   }
 }
 
 .main-header__wrapper {
   display: flex;
-  justify-content: flex-start;
-  width: 100%;
+  justify-content: space-between;
+  min-width: 190px;
   height: 38px;
-  margin: 13px 21px 14px 20px;
 
   @media (min-width: $tablet-width) {
+    height: 50px;
+    padding: 0;
+    min-width: 174px;
+  }
 
+  @media (min-width: $desktop-width) {
+    min-width: 202px;
+    height: 59px;
   }
 }
 
@@ -30,4 +43,8 @@
 
 .main-header__link-name {
   align-self: center;
+}
+
+.main-header__logo-name {
+  display: block;
 }
