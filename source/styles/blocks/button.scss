@@ -11,12 +11,15 @@
 
 .button--order {
   @include button;
-  padding: 10px 109px;
+  width: 100%;
+  grid-column: 1/-1;
 }
 
 .button--show-all {
   @include button;
   color: $base-color-text;
   background-color: #f2f2f2;
-  padding: 10px 95px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 100%;
 }
