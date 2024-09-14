@@ -1,6 +1,7 @@
 .nav {
   width: 100%;
   display: flex;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     min-width: 436px;
@@ -24,13 +25,18 @@
   background-color: #ffffff;
   text-align: center;
   width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
+    position: static;
     flex-direction: row;
     justify-content: space-between;
     gap: 33px;
     height: 36px;
     background-color: transparent;
+    width: unset;
   }
 }
 
@@ -49,6 +55,7 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     margin: 0;
+    width: unset;
   }
 
   &::before {

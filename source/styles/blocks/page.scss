@@ -5,6 +5,8 @@
   color: $base-color-text;
   min-height: 100%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .page__body-forms {
