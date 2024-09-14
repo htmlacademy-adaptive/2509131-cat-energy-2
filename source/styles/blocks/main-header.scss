@@ -22,17 +22,17 @@
 .main-header__wrapper {
   display: flex;
   justify-content: space-between;
-  min-width: 190px;
+  width: 100%;
   height: 38px;
 
   @media (min-width: $tablet-width) {
     height: 50px;
     padding: 0;
-    min-width: 174px;
+    justify-content: flex-start;
+    gap: 13px;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 202px;
     height: 59px;
   }
 }
@@ -47,4 +47,37 @@
 
 .main-header__logo-name {
   display: block;
+}
+
+.main-header__toggle {
+  align-self: center;
+}
+
+.main-header__toggle--open {
+  background-color: #ffffff;
+  background-image: url("../../icons/stack.svg#burger-menu");
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+.main-header__toggle--close {
+  background-color: #ffffff;
+  background-image: url("../../icons/stack.svg#close-button");
+  background-repeat: no-repeat;
+  background-size: 18px 18px;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header__toggle--open,
+  .main-header__toggle--close {
+    display: none;
+  }
 }

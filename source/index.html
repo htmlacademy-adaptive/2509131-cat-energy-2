@@ -29,11 +29,11 @@
           <img class="main-header__logo-name" src="images/main-header-logo-name.svg" width="101" height="18" alt="Cat Energy.">
         </picture>
       </a>
-    </div>
-    <nav class="nav">
-      <button class="nav__toggle nav__toggle--close" type="button">
+      <button class="main-header__toggle main-header__toggle--close" type="button">
         <span class="visually-hidden">Закрыть меню</span>
       </button>
+    </div>
+    <nav class="nav">
       <ul class="nav__list nav__list--is--closed">
         <li class="nav__item">
           <a class="nav__link nav__link--current" href="#">
@@ -55,7 +55,7 @@
   </header>
   <main>
     <section class="promo">
-      <h1 class="promo__title">Функциональное питание для котов</h1>
+      <h1 class="promo__title">Функциональное <br> питание для котов</h1>
       <p class="promo__slogan">Занялся собой? Займись котом!</p>
       <picture>
         <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="images/index-can-desctop@1x.png 1x, images/index-can-desctop@2x.png 2x">
@@ -104,84 +104,87 @@
       <div class="example__wrapper">
         <h2 class="example__title">Живой пример</h2>
         <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <dl class="example__stats">
-          <dt class="example__stats-item example__stats-item--weight">5 кг</dt>
-          <dd class="example__stats-item-description">снижение веса</dd>
-          <dt class="example__stats-item example__stats-item--time">60 дней</dt>
-          <dd class="example__stats-item-description">затрачено времени</dd>
-        </dl>
-        <p class="example__expenses">
-          <span>Затраты на питание:</span>
-          <span>15 000 руб.</span>
-        </p>
-        <div class="slider">
-          <ul class="slider__list">
-            <li class="slider__item slider__item--fat-cat">
-              <picture>
-                <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/fat-cat-tablet@1x.png 1x, images/fat-cat-tablet@2x.png 2x">
-                <img class="slider__cats-img" src="images/fat-cat-mobile@1x.png" srcset="images/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот.">
-              </picture>
-            </li>
-            <li class="slider__item slider__item--slim-cat">
-              <picture>
-                <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/slim-cat-tablet@1x.png 1x, images/slim-cat-tablet@2x.png 2x">
-                <img class="slider__cats-img" src="images/slim-cat-mobile@1x.png" srcset="images/slim-cat-mobile@2x.png 2x" width="280" height="256" alt="Худой кот.">
-              </picture>
-            </li>
-          </ul>
-          <button class="slider__button" type="button">
-            <span class="visually-hidden">Передвинуть ползунок слайдера</span>
-          </button>
+        <div class="example__container">
+          <dl class="example__stats">
+            <dt class="example__stats-item example__stats-item--weight">5 кг</dt>
+            <dd class="example__stats-item-description">снижение веса</dd>
+            <dt class="example__stats-item example__stats-item--time">60 дней</dt>
+            <dd class="example__stats-item-description">затрачено времени</dd>
+          </dl>
+          <p class="example__expenses">
+            <span>Затраты на питание:</span>
+            <span>15 000 руб.</span>
+          </p>
         </div>
+      </div>
+      <div class="slider">
+        <ul class="slider__list">
+          <li class="slider__item slider__item--fat-cat">
+            <picture>
+              <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/fat-cat-tablet@1x.png 1x, images/fat-cat-tablet@2x.png 2x">
+              <img class="slider__cats-img" src="images/fat-cat-mobile@1x.png" srcset="images/fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот.">
+            </picture>
+          </li>
+          <li class="slider__item slider__item--slim-cat">
+            <picture>
+              <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/slim-cat-tablet@1x.png 1x, images/slim-cat-tablet@2x.png 2x">
+              <img class="slider__cats-img" src="images/slim-cat-mobile@1x.png" srcset="images/slim-cat-mobile@2x.png 2x" width="280" height="256" alt="Худой кот.">
+            </picture>
+          </li>
+        </ul>
+        <button class="slider__button" type="button">
+          <span class="visually-hidden">Передвинуть ползунок слайдера</span>
+        </button>
       </div>
     </section>
     <section class="contacts">
-      <div class="contacts__header">
+      <div class="contacts__wrapper">
         <h2 class="visually-hidden">Как нас найти</h2>
-        <p class="contacts__intro">Приглашаем к сотрудничеству дилеров!</p>
-        <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <p class="contacts__intro">Приглашаем <br> к сотрудничеству <br> дилеров!</p>
+        <p class="contacts__address">
+          <span>ул. Большая <br> Конюшенная, д. 19/8</span>
+          <span>Санкт-Петербург</span>
+        </p>
       </div>
       <picture>
         <source media="(min-width: 1440px)" srcset="images/location-desctop@1x.png 1x, images/location-desctop@2x.png 2x" type="image/png" width="1440" height="400">
         <source media="(min-width: 768px)" srcset="images/location-tablet@1x.png 1x, images/location-tablet@2x.png 2x" type="image/png" width="768" height="400">
-        <img src="images/location-mobile@1x.png" srcset="images/location-desctop@2x.png 2x" width="320" height="362" alt="Карта расположения офиса.">
+        <img class="contacts__map" src="images/location-mobile@1x.png" srcset="images/location-desctop@2x.png 2x" width="320" height="362" alt="Карта расположения офиса.">
       </picture>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.1919413999162!2d30.31541874240941!3d59.93884617663208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1721055336225!5m2!1sru!2sru" width="320" height="474" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"></iframe>
+      <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3997.1919413999162!2d30.31541874240941!3d59.93884617663208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1721055336225!5m2!1sru!2sru" width="320" height="474" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург"></iframe>
     </section>
   </main>
   <section class="footer">
-    <div class="footer__wrapper">
-      <h2 class="visually-hidden">Контакты</h2>
-      <a class="footer__logo-link" href="#top">
-        <span class="visually-hidden">Логотип Cat Energy</span>
-        <svg class="footer__logo" width="128" height="24" viewBox="0 0 128 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <use href="../../icons/stack.svg#footer-logo"></use>
-        </svg>
-      </a>
-      <ul class="footer__socials-list">
-        <li class="footer__socials-item">
-          <a class="footer__socials-link footer__socials-link--vkontakte" href="#">
-            <span class="visually-hidden">Вконтакте</span>
-          </a>
-        </li>
-        <li class="footer__socials-item">
-          <a class="footer__socials-link footer__socials-link--youtube" href="#">
-            <span class="visually-hidden">Youtube</span>
-          </a>
-        </li>
-        <li class="footer__socials-item">
-          <a class="footer__socials-link footer__socials-link--telegram" href="#">
-            <span class="visually-hidden">Телеграмм</span>
-          </a>
-        </li>
-      </ul>
-      <a class="footer__htmlacademy" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="footer__htmlacademy-name">HTML Academy</span>
-        <svg class="footer__htmlacademy-logo" width="27" height="34" viewBox="0 0 27 34" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <use href="../../icons/stack.svg#html-academy-logo"></use>
-        </svg>
-      </a>
-    </div>
+    <h2 class="visually-hidden">Контакты</h2>
+    <a class="footer__logo-link" href="#top">
+      <span class="visually-hidden">Логотип Cat Energy</span>
+      <svg class="footer__logo" width="128" height="24" viewBox="0 0 128 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <use href="../../icons/stack.svg#footer-logo"></use>
+      </svg>
+    </a>
+    <ul class="footer__socials-list">
+      <li class="footer__socials-item">
+        <a class="footer__socials-link footer__socials-link--vkontakte" href="#">
+          <span class="visually-hidden">Вконтакте</span>
+        </a>
+      </li>
+      <li class="footer__socials-item">
+        <a class="footer__socials-link footer__socials-link--youtube" href="#">
+          <span class="visually-hidden">Youtube</span>
+        </a>
+      </li>
+      <li class="footer__socials-item">
+        <a class="footer__socials-link footer__socials-link--telegram" href="#">
+          <span class="visually-hidden">Телеграмм</span>
+        </a>
+      </li>
+    </ul>
+    <a class="footer__htmlacademy" href="https://htmlacademy.ru/intensive/adaptive">
+      <span class="footer__htmlacademy-name">HTML Academy</span>
+      <svg class="footer__htmlacademy-logo" width="27" height="34" viewBox="0 0 27 34" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <use href="../../icons/stack.svg#html-academy-logo"></use>
+      </svg>
+    </a>
   </section>
 
 </body>
