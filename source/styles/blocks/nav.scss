@@ -95,7 +95,12 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
-    color: #ffffff;
+  }
+
+  &--index {
+    @media (min-width: $desktop-width) {
+      color: #ffffff;
+    }
   }
 }
 

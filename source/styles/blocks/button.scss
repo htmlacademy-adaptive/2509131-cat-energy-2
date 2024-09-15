@@ -13,6 +13,8 @@
   @include button;
   width: 100%;
   grid-column: 1/-1;
+  margin: 0;
+  margin-bottom: 25px;
 }
 
 .button--show-all {
@@ -22,4 +24,6 @@
   padding-top: 10px;
   padding-bottom: 10px;
   width: 100%;
+  margin: 0;
+  margin-bottom: 25px;
 }
