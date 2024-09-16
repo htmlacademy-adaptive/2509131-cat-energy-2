@@ -9,12 +9,11 @@
   padding: 10px 109px;
 }
 
-.button--order {
+.button--main-products-order {
   @include button;
   width: 100%;
   grid-column: 1/-1;
   margin: 0;
-  margin-bottom: 25px;
 }
 
 .button--show-all {
@@ -26,4 +25,15 @@
   width: 100%;
   margin: 0;
   margin-bottom: 25px;
+}
+
+.button--add-products-order {
+  @media (min-width: $tablet-width) {
+    grid-column: 1/-1;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: unset;
+    padding: 10px 91px;
+  }
 }
