@@ -14,10 +14,72 @@
   }
 }
 
+.section-container--header {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+    margin-top: 55px;
+  }
+}
+
+.section-container--promo {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    align-items: start;
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+
+.section-container--program {
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+    margin-bottom: 71px;
+  }
+}
+
+.section-container--features {
+  margin-bottom: 49px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 47px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    margin-bottom: 69px;
+    width: 1220px;
+  }
+}
+
 .section-container--example {
   @media (min-width: $desktop-width) {
     display: flex;
     gap: 224px;
+    width: 1220px;
+    margin: 0 auto;
   }
 }
 
@@ -38,7 +100,21 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 66px;
-    margin-bottom: 66px;
+    margin: 66px auto;
+    width: 1220px;
+  }
+}
+
+.section-container--main-products {
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
+  }
+}
+
+.section-container--add-products {
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 0 auto;
   }
 }

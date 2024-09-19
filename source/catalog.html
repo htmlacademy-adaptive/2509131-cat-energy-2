@@ -15,48 +15,51 @@
 
 <body class="page__body">
   <header class="main-header">
-    <div class="main-header__wrapper">
-      <a class="main-header__link-logo" href="index.html">
-        <picture>
-          <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-desctop.svg">
-          <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-tablet.svg">
-          <img class="main-header__logo-image" src="images/logo-mobile.svg" width="33" height="38" alt="Cat Energy логотип.">
-        </picture>
-      </a>
-      <a class="main-header__link-name" href="index.html">
-        <picture>
-          <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml" srcset="images/main-header-logo-name.svg">
-          <img class="main-header__logo-name" src="images/main-header-logo-name.svg" width="101" height="18" alt="Cat Energy.">
-        </picture>
-      </a>
-      <button class="main-header__toggle main-header__toggle--close" type="button">
-        <span class="visually-hidden">Закрыть меню</span>
-      </button>
+    <div class="section-container section-container--header">
+      <div class="main-header__wrapper">
+        <a class="main-header__link-logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-desctop.svg">
+            <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-tablet.svg">
+            <img class="main-header__logo-image" src="images/logo-mobile.svg" width="33" height="38" alt="Cat Energy логотип.">
+          </picture>
+        </a>
+        <a class="main-header__link-name" href="index.html">
+          <picture>
+            <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml" srcset="images/main-header-logo-name.svg">
+            <img class="main-header__logo-name" src="images/main-header-logo-name.svg" width="101" height="18" alt="Cat Energy.">
+          </picture>
+        </a>
+        <button class="main-header__toggle main-header__toggle--close" type="button">
+          <span class="visually-hidden">Закрыть меню</span>
+        </button>
+      </div>
+      <nav class="nav">
+        <ul class="nav__list nav__list--is--closed">
+          <li class="nav__item">
+            <a class="nav__link nav__link--current" href="#">
+              Главная
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="catalog.html">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="program-selection.html">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
-    <nav class="nav">
-      <ul class="nav__list nav__list--is--closed">
-        <li class="nav__item">
-          <a class="nav__link" href="index.html">
-            Главная
-          </a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link nav__link--current" href="catalog.html">
-            Каталог продукции
-          </a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="program-selection.html">
-            Подбор программы
-          </a>
-        </li>
-      </ul>
-    </nav>
   </header>
   <main>
+
     <h1 class="main-title">Каталог продукции</h1>
     <section class="main-products">
-      <div class="main-products__wrapper">
+      <div class="section-container section-container--main-products">
         <h2 class="visually-hidden">Основные товары</h2>
         <ul class="main-products__list">
           <li class="main-products__card">
@@ -229,44 +232,46 @@
       </div>
     </section>
     <section class="add-products">
-      <h2 class="add-products__title">Дополнительные товары</h2>
-      <div class="add-products__wrapper">
-        <ul class="add-products__list">
-          <li class="add-products__item">
-            <p class="add-products__item-title">Сахарозаменитель</p>
-            <div class="add-products__item-description">
-              <p>1 упаковка (100 г)</p>
-              <p>200 ₽</p>
-            </div>
-            <a class="button button--add-products-order" href="#">Заказать</a>
-          </li>
-          <li class="add-products__item">
-            <p class="add-products__item-title">Питьевая вода</p>
-            <div class="add-products__item-description">
-              <p>5 литров</p>
-              <p>50 ₽</p>
-            </div>
-            <a class="button button--add-products-order" href="#">Заказать</a>
-          </li>
-          <li class="add-products__item">
-            <p class="add-products__item-title">Молоко</p>
-            <div class="add-products__item-description">
-              <p>1 литр</p>
-              <p>100 ₽</p>
-            </div>
-            <a class="button button--add-products-order" href="#">Заказать</a>
-          </li>
-          <li class="add-products__item">
-            <p class="add-products__item-title">Витамины</p>
-            <div class="add-products__item-description">
-              <p>1 упаковка (30 г)</p>
-              <p>300 ₽</p>
-            </div>
-            <a class="button button--add-products-order" href="#">Заказать</a>
-          </li>
-        </ul>
-        <div class="add-products__gift">
-          <p class="add-products__gift-title">Закажите все и получите чехол для кота в подарок!</p>
+      <div class="section-container section-container--add-products">
+        <h2 class="add-products__title">Дополнительные товары</h2>
+        <div class="add-products__wrapper">
+          <ul class="add-products__list">
+            <li class="add-products__item">
+              <p class="add-products__item-title">Сахарозаменитель</p>
+              <div class="add-products__item-description">
+                <p>1 упаковка (100 г)</p>
+                <p>200 ₽</p>
+              </div>
+              <a class="button button--add-products-order" href="#">Заказать</a>
+            </li>
+            <li class="add-products__item">
+              <p class="add-products__item-title">Питьевая вода</p>
+              <div class="add-products__item-description">
+                <p>5 литров</p>
+                <p>50 ₽</p>
+              </div>
+              <a class="button button--add-products-order" href="#">Заказать</a>
+            </li>
+            <li class="add-products__item">
+              <p class="add-products__item-title">Молоко</p>
+              <div class="add-products__item-description">
+                <p>1 литр</p>
+                <p>100 ₽</p>
+              </div>
+              <a class="button button--add-products-order" href="#">Заказать</a>
+            </li>
+            <li class="add-products__item">
+              <p class="add-products__item-title">Витамины</p>
+              <div class="add-products__item-description">
+                <p>1 упаковка (30 г)</p>
+                <p>300 ₽</p>
+              </div>
+              <a class="button button--add-products-order" href="#">Заказать</a>
+            </li>
+          </ul>
+          <div class="add-products__gift">
+            <p class="add-products__gift-title">Закажите все и получите чехол для кота в подарок!</p>
+          </div>
         </div>
       </div>
     </section>
@@ -299,36 +304,38 @@
     </section>
   </main>
   <section class="footer">
-    <h2 class="visually-hidden">Контакты</h2>
-    <a class="footer__logo-link" href="#top">
-      <span class="visually-hidden">Логотип Cat Energy</span>
-      <svg class="footer__logo" width="128" height="24" viewBox="0 0 128 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-        <use href="icons/stack.svg#footer-logo"></use>
-      </svg>
-    </a>
-    <ul class="footer__socials-list">
-      <li class="footer__socials-item">
-        <a class="footer__socials-link footer__socials-link--vkontakte" href="#">
-          <span class="visually-hidden">Вконтакте</span>
-        </a>
-      </li>
-      <li class="footer__socials-item">
-        <a class="footer__socials-link footer__socials-link--youtube" href="#">
-          <span class="visually-hidden">Youtube</span>
-        </a>
-      </li>
-      <li class="footer__socials-item">
-        <a class="footer__socials-link footer__socials-link--telegram" href="#">
-          <span class="visually-hidden">Телеграмм</span>
-        </a>
-      </li>
-    </ul>
-    <a class="footer__htmlacademy" href="https://htmlacademy.ru/intensive/adaptive">
-      <span class="footer__htmlacademy-name">HTML Academy</span>
-      <svg class="footer__htmlacademy-logo" width="27" height="34" viewBox="0 0 27 34" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-        <use href="icons/stack.svg#html-academy-logo"></use>
-      </svg>
-    </a>
+    <div class="section-container section-container--footer">
+      <h2 class="visually-hidden">Контакты</h2>
+      <a class="footer__logo-link" href="#top">
+        <span class="visually-hidden">Логотип Cat Energy</span>
+        <svg class="footer__logo" width="128" height="24" viewBox="0 0 128 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <use href="icons/stack.svg#footer-logo"></use>
+        </svg>
+      </a>
+      <ul class="footer__socials-list">
+        <li class="footer__socials-item">
+          <a class="footer__socials-link footer__socials-link--vkontakte" href="#">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li class="footer__socials-item">
+          <a class="footer__socials-link footer__socials-link--youtube" href="#">
+            <span class="visually-hidden">Youtube</span>
+          </a>
+        </li>
+        <li class="footer__socials-item">
+          <a class="footer__socials-link footer__socials-link--telegram" href="#">
+            <span class="visually-hidden">Телеграмм</span>
+          </a>
+        </li>
+      </ul>
+      <a class="footer__htmlacademy" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="footer__htmlacademy-name">HTML Academy</span>
+        <svg class="footer__htmlacademy-logo" width="27" height="34" viewBox="0 0 27 34" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+          <use href="icons/stack.svg#html-academy-logo"></use>
+        </svg>
+      </a>
+    </div>
   </section>
 
 </body>

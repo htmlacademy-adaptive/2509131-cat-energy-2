@@ -2,24 +2,6 @@
   margin: 0 auto;
 }
 
-.program__wrapper {
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  padding: 0;
-
-  @media (min-width: $tablet-width) {
-    margin-left: 30px;
-    margin-right: 30px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: 110px;
-    margin-right: 110px;
-    max-width: 1440px;
-  }
-}
-
 .program__title {
   font-family: $secondary-font;
   font-size: 24px;

@@ -7,20 +7,6 @@
   }
 }
 
-.example__wrapper {
-  // margin: 25px 20px 40px;
-
-  // @media (min-width: $tablet-width) {
-  //   margin: 45px 30px 250px;
-  // }
-
-  // @media (min-width: $desktop-width) {
-  //   margin: 0;
-  //   margin-left: 110px;
-  //   margin-bottom: 75px;
-  // }
-}
-
 .example__title {
   font-family: $secondary-font;
   font-size: 36px;
@@ -34,11 +20,12 @@
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    padding-top: 0;
+    padding-top: 45px;
     padding-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 0;
     padding-bottom: 146px;
   }
 }

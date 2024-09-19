@@ -22,8 +22,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 110px;
+    margin: 0 auto;
     margin-top: 74px;
+    width: 1220px;
   }
 
   &::after {
