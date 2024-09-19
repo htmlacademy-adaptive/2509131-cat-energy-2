@@ -96,12 +96,6 @@
     font-size: 20px;
     line-height: 30px;
   }
-
-  &--index {
-    @media (min-width: $desktop-width) {
-      color: #ffffff;
-    }
-  }
 }
 
 .nav__link--current::after {
@@ -114,7 +108,15 @@
     left: 0;
     bottom: -10px;
   }
+}
 
+.nav--index .nav__link {
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+  }
+}
+
+.nav--index .nav__link--current::after {
   @media (min-width: $desktop-width) {
     background-color: #ffffff;
   }
