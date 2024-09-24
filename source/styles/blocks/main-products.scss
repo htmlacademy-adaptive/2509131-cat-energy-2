@@ -45,14 +45,14 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr;
-    background-color: $bg-light-gray;
+    background: linear-gradient(to top, $bg-light-gray 430px, #ffffff 430px);
     gap: unset;
     padding: 0;
     padding-left: 37px;
     padding-right: 37px;
+    padding-bottom: 40px;
     justify-content: center;
     align-items: center;
-    min-height: 511px;
   }
 
   &::after {
@@ -70,6 +70,14 @@
   }
 }
 
+.main-products__description {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .main-products__link-title {
   text-decoration: none;
   font-family: $secondary-font;
@@ -79,11 +87,21 @@
 
   @media (min-width: $tablet-width) {
     text-align: center;
+    align-self: center;
   }
 }
 
 .main-products__link-img {
   place-self: center center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
+    margin-top: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 12px;
+  }
 }
 
 .main-products__item-img {
@@ -99,6 +117,18 @@
   color: #222222;
   margin: 0;
   margin-bottom: 14px;
+  width: 76px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+    width: 135px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 23px;
+  }
 }
 
 .main-products__item-parameter-list {
@@ -107,18 +137,34 @@
   padding: 0;
   display: grid;
   grid-template-columns: auto auto;
+
+  @media (min-width: $tablet-width) {
+    row-gap: 12px;
+  }
 }
 
 .main-products__item-parameter {
   font-size: 12px;
   line-height: 16px;
   text-align: left;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .main-products__item-parameter-value {
   font-size: 12px;
   line-height: 16px;
   text-align: right;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .main-products__card--more {
@@ -127,6 +173,11 @@
   gap: 0;
   padding-top: 25px;
   position: relative;
+  background: unset;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+  }
 
   &::before {
     content: "";
@@ -141,6 +192,12 @@
       width: 60px;
       height: 60px;
       left: calc(50% - 30px);
+      top: 132px;
+      background-image: url("/icons/plus-tablet.svg");
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 141px;
     }
   }
 
@@ -171,6 +228,16 @@
   text-align: center;
   position: relative;
 
+  @media (min-width: $tablet-width) {
+    margin: 242px 58px 23px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 230px 0 26px;
+  }
+
   &::before {
     position: absolute;
   }
@@ -182,4 +249,17 @@
   line-height: 16px;
   text-align: center;
   margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 82px;
+    margin-left: 37px;
+    margin-right: 37px;
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
