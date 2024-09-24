@@ -34,10 +34,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-width: 280px;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
-    min-width: 168px;
+    width: 168px;
   }
 }
 

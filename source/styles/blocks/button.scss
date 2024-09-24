@@ -6,9 +6,9 @@
   @include button;
   font-size: 20px;
   line-height: 26px;
-  width: 100%;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  min-width: 256px;
+  padding: 15px;
+  border: none;
 }
 
 .button--main-products-order {
@@ -26,7 +26,6 @@
   padding-bottom: 10px;
   width: 100%;
   margin: 0;
-  margin-bottom: 25px;
 }
 
 .button--add-products-order {

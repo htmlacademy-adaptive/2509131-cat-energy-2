@@ -15,11 +15,12 @@
 }
 
 .section-container--header {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto;
   margin: 0;
 
   @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
@@ -106,13 +107,20 @@
 }
 
 .section-container--main-products {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 74px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 1220px;
     margin: 0 auto;
+    margin-bottom: 71px;
   }
 }
 
 .section-container--add-products {
+  margin-top: 25px;
+
   @media (min-width: $desktop-width) {
     width: 1220px;
     margin: 0 auto;

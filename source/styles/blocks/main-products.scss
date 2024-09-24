@@ -124,6 +124,8 @@
 .main-products__card--more {
   display: flex;
   flex-direction: column;
+  gap: 0;
+  padding-top: 25px;
   position: relative;
 
   &::before {

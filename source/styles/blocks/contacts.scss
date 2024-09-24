@@ -5,6 +5,7 @@
 .contacts__wrapper {
   padding: 26px 20px;
   display: flex;
+  background-color: $bg-light-gray;
 
   @media (min-width: $tablet-width) {
     padding: 60px 70px;
@@ -60,5 +61,9 @@
 .contacts__map {
   display: block;
   width: 100%;
-  overflow: hidden;
+}
+
+.contacts__map-wrapper {
+  width: 100%;
+  overflow-x: hidden;
 }
