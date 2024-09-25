@@ -3,6 +3,27 @@
   font-size: 14px;
   line-height: 18px;
   color: $base-color-text;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.page__body--index {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.page__header,
+.page__footer {
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+.page__main {
+  flex-grow: 1;
 }
 
 .page__body-forms {

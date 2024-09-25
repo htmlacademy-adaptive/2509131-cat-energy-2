@@ -1,8 +1,94 @@
+.nav {
+  width: 100%;
+  display: flex;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    min-width: 436px;
+    justify-content: end;
+    gap: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 475px;
+  }
+}
+
+.nav--no-js .nav__list {
+  position: static;
+}
+
 .nav__list {
+  display: flex;
+  flex-flow: column wrap;
   list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 33px;
+    height: 36px;
+    background-color: transparent;
+    width: unset;
+  }
+}
+
+.nav--is-closed .nav__list {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.nav--catalog .nav__list {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.nav__item {
+  padding-top: 22px;
+  padding-bottom: 24px;
+  position: relative;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    margin: 0;
+    width: unset;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $light-gray;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &:last-child::after {
+    display: none;
+  }
 }
 
 .nav__link {
+  position: relative;
   font-family: $secondary-font;
   font-size: 20px;
   line-height: 20px;
@@ -10,21 +96,38 @@
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
-.nav__toggle {
-  background-color: #ffffff;
-  background-image: url("../../icons/stack.svg#burger-menu");
-  background-repeat: no-repeat;
-  background-size: 24px 24px;
-  width: 24px;
-  height: 24px;
-  border: none;
+.nav__link--current::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: $bg-basic-green;
+    left: 0;
+    bottom: -10px;
+  }
 }
 
-.nav__toggle--close {
-  background-image: url("../../icons/stack.svg#close-button");
-  background-size: 18px 18px;
-  width: 18px;
-  height: 18px;
+.nav--index .nav__link {
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+  }
+}
+
+.nav--index .nav__link--current::after {
+  @media (min-width: $desktop-width) {
+    background-color: #ffffff;
+  }
 }

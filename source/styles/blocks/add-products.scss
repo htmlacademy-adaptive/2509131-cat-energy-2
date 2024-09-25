@@ -1,22 +1,103 @@
+.add-products__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 80px;
+  }
+}
+
 .add-products__title {
   font-family: $secondary-font;
   font-size: 24px;
   line-height: 24px;
-  text-align: center;
+  font-weight: 400;
+  text-align: left;
   color: #000000;
+  margin: 0;
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 40px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+    margin: 0;
+    margin-bottom: 80px;
+    margin-left: 59px;
+  }
 }
 
 .add-products__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 896px;
+    margin: 0;
+    margin-left: 108px;
+  }
 }
 
 .add-products__item {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  padding-top: 13px;
+  padding-bottom: 19px;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 38px 28px;
+    grid-template-columns: 1fr 220px;
+    align-items: center;
+    padding-top: 26px;
+    padding-bottom: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: auto 255px 244px;
+    column-gap: 40px;
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 17px;
+  }
+}
+
+.add-products__item-title {
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 16px;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
   color: #222222;
+  align-self: start;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    align-self: center;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .add-products__item-description {
@@ -25,14 +106,68 @@
   line-height: 14px;
   text-transform: lowercase;
   color: #444444;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.add-products__item-description p {
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .add-products__gift {
-  background-image: url("../../images/gift-background-mobile@1x.jpg");
+  background-image: linear-gradient(0deg, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/images/gift-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-color: $bg-basic-green;
-  background-size: 280px 290px;
+  background-size: cover;
+  background-position: center;
+  background-color: #444444;
   display: block;
+  min-height: 290px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("/icons/stack.svg#gift");
+    width: 78px;
+    height: 80px;
+    top: 59px;
+    left: calc(50% - 39px);
+
+    @media (min-width: $tablet-width) {
+      top: 57px;
+      left: 77px;
+      width: 80px;
+      height: 83px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 56px;
+      left: calc(50% - 42px);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(0deg, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/images/gift-background-tablet@1x.jpg");
+    min-height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(0deg, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/images/gift-background-desctop@1x.jpg");
+    min-height: 288px;
+  }
 }
 
 .add-products__gift-title {
@@ -41,13 +176,17 @@
   line-height: 20px;
   text-align: center;
   color: #ffffff;
-  position: relative;
+  margin: 0;
+  padding: 187px 61px 43px 58px;
 
-  &::after {
-    content: "";
-    position: absolute;
-    background-image: url("../../icons/stack.svg#gift");
-    width: 78px;
-    height: 80px;
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-top: 71px;
+    padding-right: 125px;
+    padding-left: 421px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 185px 42px 43px;
   }
 }
