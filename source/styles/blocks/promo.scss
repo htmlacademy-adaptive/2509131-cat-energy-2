@@ -20,13 +20,13 @@
   background-image: linear-gradient(0deg, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/images/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: cover;
+  background-size: contain;
   min-height: 302px;
   top: 0;
   right: 0;
   width: 100%;
   z-index: -1;
-  background-color: #444444;
+  background-color: #4a4a4a;
 
   @media (min-width: $tablet-width) {
     background-image: none;
@@ -40,6 +40,7 @@
     top: -114px;
     height: 694px;
     width: auto;
+    background-color: #4a4a4a;
   }
 }
 

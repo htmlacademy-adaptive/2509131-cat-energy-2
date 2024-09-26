@@ -4,11 +4,12 @@
 
 .main-header__wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr auto 1fr;
   justify-content: space-between;
   width: calc(100% - 40px);
   height: 38px;
   margin: 13px 20px 15px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: auto auto;
@@ -17,6 +18,7 @@
     justify-content: start;
     gap: 13px;
     margin: 0;
+    width: 100%;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,12 +26,16 @@
   }
 }
 
-.main-header__link-logo {
-  align-items: center;
-}
+.main-header__link {
+  align-self: center;
 
-.main-header__link-name {
-  place-self: center;
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .main-header__logo-name {
@@ -38,6 +44,10 @@
 
 .main-header__toggle {
   place-self: center end;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-header__toggle--open {
@@ -62,9 +72,3 @@
   border: none;
 }
 
-@media (min-width: $tablet-width) {
-  .main-header__toggle--open,
-  .main-header__toggle--close {
-    display: none;
-  }
-}
