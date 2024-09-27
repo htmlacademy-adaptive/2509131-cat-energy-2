@@ -5,7 +5,6 @@
 .contacts__wrapper {
   padding: 26px 20px;
   display: flex;
-  background-color: $bg-light-gray;
 
   @media (min-width: $tablet-width) {
     padding: 60px 70px;
@@ -16,9 +15,8 @@
     padding: 60px 80px;
     position: absolute;
     top: 95px;
-    left: 110px;
+    left: calc(50% - 615px);
     width: 407px;
-    background-color: #ffffff;
     align-items: center;
   }
 }

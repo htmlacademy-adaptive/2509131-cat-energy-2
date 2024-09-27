@@ -18,6 +18,10 @@
   color: #000000;
   margin: 0;
   margin-bottom: 36px;
+  position: relative;
+  width: fit-content;
+  background-color: #ffffff;
+  box-shadow: -40px 0 0 0 #ffffff, 40px 0 0 0 #ffffff;
 
   @media (min-width: $tablet-width) {
     margin-left: 40px;
@@ -31,6 +35,26 @@
     margin: 0;
     margin-bottom: 80px;
     margin-left: 59px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    top: 12px;
+    right: 0;
+    height: 2px;
+    background: $bg-basic-green;
+    z-index: -1;
+    box-shadow: 100vw 0 0 0 $bg-basic-green;
+
+    @media (min-width: $tablet-width) {
+      top: 16px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 20px;
+    }
   }
 }
 

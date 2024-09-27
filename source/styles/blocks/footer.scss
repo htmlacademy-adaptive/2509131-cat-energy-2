@@ -44,11 +44,6 @@
   justify-content: space-between;
   min-width: 132px;
   align-items: center;
-
-  @media (min-width: $tablet-width) {
-    min-width: 168px;
-    justify-content: center;
-  }
 }
 
 .footer__htmlacademy {
@@ -68,6 +63,8 @@
   width: 28px;
   height: 22px;
   display: block;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .footer__socials-link--vkontakte {

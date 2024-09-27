@@ -44,7 +44,7 @@
     right: 0;
     width: 100%;
     height: 1px;
-    background-color: $light-gray;
+    background-color: $bg-light-gray;
 
     @media (min-width: $tablet-width) {
       display: none;
@@ -92,11 +92,18 @@
 }
 
 .section-container--example {
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 101px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     gap: 224px;
     width: 1220px;
     margin: 0 auto;
+    padding-bottom: 75px;
   }
 }
 
