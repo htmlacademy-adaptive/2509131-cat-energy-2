@@ -1,5 +1,5 @@
 .example {
-  background-color: #eaeaea;
+  background-color: $bg-gray;
 
   @media (min-width: $tablet-width) {
     background: linear-gradient(to top, $light-gray 462px, #ffffff 462px);
@@ -63,25 +63,29 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 104px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
     gap: 55px;
     align-items: start;
+    margin-bottom: 0;
   }
 }
 
 .example__stats {
   display: grid;
-  grid-template-columns: auto auto;
-  gap: 6px 32px;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 32px;
   margin: 0;
-  padding: 0;
-  padding-bottom: 20px;
+  margin-bottom: 34px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
+    column-gap: 43px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -98,10 +102,16 @@
   color: #000000;
   grid-row: 1/2;
   border: 1px solid $special-gray;
+  border-radius: 3px;
+  padding-top: 14px;
+  padding-bottom: 18px;
+  box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
     line-height: 37px;
+    padding: 15px 30px 20px;
+    // padding-bottom: 20px;
   }
 }
 
@@ -111,10 +121,44 @@
   text-align: center;
   grid-row: 2/3;
   margin: 0;
+  position: absolute;
+  bottom: -13px;
+  box-shadow: -17px 0 0 0 $bg-gray, 17px 0 0 0 $bg-gray;
+  background: $bg-gray;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
     line-height: 14px;
+    background: #ffffff;
+    box-shadow: -9px 0 0 0 #ffffff, 9px 0 0 0 #ffffff;
+    bottom: -6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background: $bg-gray;
+    box-shadow: -9px 0 0 0 $bg-gray, 9px 0 0 0 $bg-gray;
+  }
+}
+
+.example__stats-item-description br {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.example__stats-item-description--time {
+  right: 12%;
+
+  @media (min-width: $tablet-width) {
+    right: 5%;
+  }
+}
+
+.example__stats-item-description--weight {
+  left: 12%;
+
+  @media (min-width: $tablet-width) {
+    left: 9%;
   }
 }
 
@@ -138,11 +182,14 @@
     align-items: end;
     gap: 9px;
     padding-bottom: 0;
+    padding-top: 15px;
+    align-self: start;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
     gap: 63px;
     justify-content: flex-start;
+    padding-top: 0;
   }
 }
