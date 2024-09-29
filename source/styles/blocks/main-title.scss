@@ -36,6 +36,7 @@
     width: 100%;
     height: 1px;
     background-color: $light-gray;
+    padding-left: 20px;
 
     @media (min-width: $tablet-width) {
       display: none;

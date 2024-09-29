@@ -2,6 +2,14 @@
   position: relative;
 }
 
+.contacts--catalog .contacts__wrapper {
+  background: $bg-light-gray;
+
+  @media (min-width: $desktop-width) {
+    background: #ffffff;
+  }
+}
+
 .contacts__wrapper {
   padding: 26px 20px;
   display: flex;

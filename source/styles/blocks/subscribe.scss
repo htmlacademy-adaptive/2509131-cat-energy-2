@@ -120,6 +120,8 @@
   display: block;
   text-align: left;
   padding: 13px;
+  color: #444444;
+  border: 1px solid $special-gray;
 
   @media (min-width: $tablet-width) {
     width: 100%;

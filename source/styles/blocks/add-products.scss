@@ -68,12 +68,14 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 70px;
+    border: 1px solid $special-gray;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 896px;
     margin: 0;
     margin-left: 108px;
+    border: none;
   }
 }
 
@@ -83,6 +85,8 @@
   grid-template-rows: auto;
   padding-top: 13px;
   padding-bottom: 19px;
+  position: relative;
+  border-bottom: 1px solid $special-gray;
 
   @media (min-width: $tablet-width) {
     padding: 26px 38px 28px;
@@ -98,6 +102,30 @@
     padding: 0;
     padding-top: 15px;
     padding-bottom: 17px;
+  }
+
+  &:last-child {
+    border-bottom: 1px solid $special-gray;
+
+    @media (min-width: $tablet-width) {
+      border-bottom: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      border-bottom: 1px solid $special-gray;
+    }
+  }
+
+  &:first-child {
+    border-top: 1px solid $special-gray;
+
+    @media (min-width: $tablet-width) {
+      border-top: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      border-top: 1px solid $special-gray;
+    }
   }
 }
 
