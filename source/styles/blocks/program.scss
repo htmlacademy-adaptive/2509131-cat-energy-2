@@ -190,16 +190,21 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .program__link::after {
   content: "";
   position: absolute;
-  width: 24px;
+  width: 32px;
   height: 12px;
   background-color: #000000;
   mask-image: url("../../icons/stack.svg#arrow-right");
   mask-size: 24px 12px;
+  mask-repeat: no-repeat;
   right: -37px;
   top: 6px;
 
@@ -207,4 +212,13 @@
     right: -47px;
     top: 8px;
   }
+}
+
+.program__link:hover::after {
+  width: 40px;
+  height: 12px;
+  mask-image: url("../../icons/stack.svg#arrow-right-big");
+  mask-size: 32px 12px;
+  mask-repeat: no-repeat;
+  mask-position: 8px;
 }

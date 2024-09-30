@@ -189,6 +189,10 @@
   min-height: 290px;
   position: relative;
 
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(0deg, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/images/gift-background-mobile@2x.jpg");
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -214,11 +218,19 @@
   @media (min-width: $tablet-width) {
     background-image: linear-gradient(0deg, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/images/gift-background-tablet@1x.jpg");
     min-height: 200px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(0deg, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/images/gift-background-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
     background-image: linear-gradient(0deg, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/images/gift-background-desctop@1x.jpg");
     min-height: 288px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(0deg, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/images/gift-background-desctop@2x.jpg");
+    }
   }
 }
 

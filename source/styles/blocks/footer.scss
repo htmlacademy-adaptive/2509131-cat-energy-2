@@ -34,6 +34,15 @@
 
 .footer__logo {
   display: block;
+
+  &:hover,
+  &:focus {
+    color: #3e3e3e;
+  }
+
+  &:active {
+    color: #6b6b6b;
+  }
 }
 
 .footer__socials-list {
@@ -59,12 +68,39 @@
   }
 }
 
+.footer__htmlacademy-name {
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+.footer__htmlacademy-logo {
+  &:hover,
+  &:focus {
+    color: $bg-basic-green;
+  }
+
+  &:active {
+    color: rgba(104, 183, 56, 0.3);
+  }
+}
+
 .footer__socials-link {
   width: 28px;
   height: 22px;
   display: block;
   padding-left: 10px;
   padding-right: 10px;
+
+  &:hover,
+  &:focus {
+    color: $bg-basic-green;
+  }
+
+  &:active {
+    color: $bg-basic-green;
+    opacity: 0.3;
+  }
 }
 
 .footer__socials-link--vkontakte {
