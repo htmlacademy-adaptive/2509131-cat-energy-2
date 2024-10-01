@@ -15,15 +15,15 @@
   display: flex;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 70px;
+    padding: 58px 70px 60px;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 60px 80px;
+    padding: 57px 80px 59px;
     position: absolute;
     top: 95px;
-    left: calc(50% - 615px);
+    left: calc(50% - 610px);
     width: 407px;
     align-items: center;
     background: #ffffff;
@@ -45,12 +45,14 @@
     font-size: 20px;
     line-height: 26px;
     min-width: unset;
+    padding-top: 3px;
   }
 }
 
 .contacts__address {
   padding: 0;
   margin: 0;
+  padding-top: 3px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -70,6 +72,10 @@
   display: block;
   border: none;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
 
 .contacts__map-wrapper {

@@ -45,7 +45,7 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr;
-    background: linear-gradient(to top, $bg-light-gray 430px, #ffffff 430px);
+    background: linear-gradient(to bottom, #ffffff 81px, $bg-light-gray 81px);
     gap: unset;
     padding: 0;
     padding-left: 37px;
@@ -59,8 +59,9 @@
     content: "";
     position: absolute;
     bottom: 0;
-    right: 0;
-    width: 100%;
+    right: 50%;
+    transform: translateX(50%);
+    width: calc(100% + 40px);
     height: 1px;
     background-color: $light-gray;
 

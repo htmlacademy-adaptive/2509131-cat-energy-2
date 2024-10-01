@@ -6,7 +6,7 @@
   text-align: left;
   color: #000000;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
@@ -40,15 +40,16 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: auto auto;
-    gap: 37px 137px;
+    grid-template-columns: 1fr 1fr;
+    gap: 37px 60px;
     counter-reset: numbers;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
-    gap: 37px 80px;
+    gap: 37px 78px;
   }
 }
 
@@ -60,11 +61,12 @@
   @media (min-width: $tablet-width) {
     min-height: 280px;
     padding-left: 0;
+    padding-right: 50px;
     min-width: 246px;
   }
 
   @media (min-width: $desktop-width) {
-    min-width: 230px;
+    padding-right: 0;
   }
 
   &::before {
@@ -81,6 +83,8 @@
 
     @media (min-width: $tablet-width) {
       top: 40px;
+      width: 80px;
+      height: 80px;
     }
   }
 
@@ -89,7 +93,7 @@
       counter-increment: numbers;
       content: counter(numbers);
       position: absolute;
-      right: 0;
+      left: 115px;
       font-family: $secondary-font;
       font-size: 280px;
       line-height: 280px;
@@ -134,5 +138,11 @@
   &::before {
     background-image: url("../../icons/stack.svg#clock");
     background-size: 26px 31px;
+  }
+}
+
+.features__item br {
+  @media (max-width: $mobile-width-only) {
+    display: none;
   }
 }

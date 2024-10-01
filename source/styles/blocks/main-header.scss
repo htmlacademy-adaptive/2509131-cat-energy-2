@@ -32,7 +32,7 @@
   justify-content: space-between;
   width: calc(100% - 40px);
   height: 38px;
-  margin: 13px 20px 15px;
+  margin: 13px 20px 14px;
   position: relative;
 
   @media (min-width: $tablet-width) {
@@ -68,7 +68,7 @@
 
 .main-header__toggle {
   place-self: center end;
-  background-position: center;
+  background-position: right;
   padding: 20px;
 
   @media (min-width: $tablet-width) {
