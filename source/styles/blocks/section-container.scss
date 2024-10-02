@@ -149,8 +149,12 @@
 .section-container--add-products {
   margin-top: 25px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 79px;
+  }
+
   @media (min-width: $desktop-width) {
-    width: 1338px;
+    width: 1220px;
     margin: 0 auto;
   }
 }

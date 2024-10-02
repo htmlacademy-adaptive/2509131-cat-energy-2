@@ -15,9 +15,12 @@
   @include button;
   font-size: 20px;
   line-height: 26px;
-  min-width: 256px;
   padding: 15px;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    min-width: 256px;
+  }
 }
 
 .button--main-products-order {

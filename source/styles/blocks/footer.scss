@@ -60,7 +60,7 @@
   align-items: center;
   gap: 4px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     gap: 6px;
   }
 }
@@ -106,7 +106,7 @@
   display: block;
   padding: 10px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     padding-left: 8px;
   }
 

@@ -49,6 +49,14 @@
   right: 50%;
   z-index: 3;
 
+  &:hover {
+    background-color: $bg-basic-green;
+  }
+
+  &:active {
+    background-color: rgba(94, 170, 47, 0.6);
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -73,4 +81,20 @@
     mask-image: url("../../icons/stack.svg#slider-arrows");
     transform: translate(-50%, -50%);
   }
+}
+
+.slider__button:hover::before {
+  border-color: $bg-basic-green;
+}
+
+.slider__button:active::before {
+  border-color: rgba(94, 170, 47, 0.6);
+}
+
+.slider__button:hover::after {
+  background-color: $bg-basic-green;
+}
+
+.slider__button:active::after {
+  background-color: rgba(94, 170, 47, 0.6);
 }
