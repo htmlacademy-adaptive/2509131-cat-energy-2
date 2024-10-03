@@ -116,16 +116,20 @@
 }
 
 .promo__image {
+  margin: 0 auto;
   margin-bottom: 3px;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 709px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
     top: 31px;
     right: calc(50% - 388px);
+    max-width: 552px;
   }
 }
 

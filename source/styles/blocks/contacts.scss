@@ -11,8 +11,9 @@
 }
 
 .contacts__wrapper {
-  padding: 25px 20px 26px;
+  padding: 25px 22px 26px 20px;
   display: flex;
+  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     padding: 59px 70px 60px;
