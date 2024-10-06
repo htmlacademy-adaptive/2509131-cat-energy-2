@@ -2,12 +2,13 @@
   background-color: $bg-gray;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(to top, $light-gray 462px, #ffffff 462px);
+    background: linear-gradient(to bottom, #ffffff 619px, #e6e6e6 619px);
     border-top: 1px solid $light-gray;
   }
 
   @media (min-width: $desktop-width) {
     border-top: none;
+    background: linear-gradient(to bottom, #ffffff 136px, #e6e6e6 136px);
   }
 }
 

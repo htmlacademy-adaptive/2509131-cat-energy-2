@@ -68,8 +68,12 @@
 
 .main-header__toggle {
   place-self: center end;
-  background-position: right;
+  background-position: center;
   padding: 20px;
+  cursor: pointer;
+  border: none;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     display: none;
@@ -85,23 +89,18 @@
 }
 
 .main-header__toggle--open {
-  background-color: #ffffff;
   background-image: url("../../icons/stack.svg#burger-menu");
-  background-repeat: no-repeat;
   background-size: 24px 24px;
   width: 24px;
   height: 24px;
-  border: none;
-  cursor: pointer;
+  transform: translateX(8px);
 }
 
 .main-header__toggle--close {
-  background-color: #ffffff;
   background-image: url("../../icons/stack.svg#close-button");
   background-repeat: no-repeat;
   background-size: 18px 18px;
   width: 18px;
   height: 18px;
-  cursor: pointer;
-  border: none;
+  transform: translateX(10px);
 }
