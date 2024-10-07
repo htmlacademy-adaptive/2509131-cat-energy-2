@@ -7,10 +7,6 @@
     justify-content: end;
     gap: 32px;
   }
-
-  @media (min-width: $desktop-width) {
-    min-width: 475px;
-  }
 }
 
 .nav--no-js .nav__list {
@@ -36,7 +32,7 @@
     position: static;
     flex-direction: row;
     justify-content: space-between;
-    gap: 35px;
+    gap: 34px;
     height: 36px;
     background-color: transparent;
     width: unset;
@@ -53,22 +49,12 @@
   }
 }
 
-.nav--catalog .nav__list {
-  @media (max-width: $mobile-width-only) {
-    display: none;
-  }
-}
-
 .nav__item {
   padding-top: 22px;
   padding-bottom: 24px;
   position: relative;
   width: 100%;
   border-bottom: 1px solid $light-gray;
-
-  &:last-child {
-    border-bottom: none;
-  }
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -106,7 +92,7 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
-    padding-top: 3px;
+    padding-top: 5px;
   }
 
   &:hover {

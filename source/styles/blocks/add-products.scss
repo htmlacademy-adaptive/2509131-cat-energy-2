@@ -34,7 +34,7 @@
     font-size: 40px;
     line-height: 40px;
     margin: 0;
-    margin-bottom: 78px;
+    margin-bottom: 80px;
   }
 
   &::before {
@@ -190,11 +190,14 @@
 .add-products__item-price {
   @media (min-width: $tablet-width) {
     padding-right: 3px;
+    min-width: 40px;
+    text-align: right;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 42px;
     padding-right: 0;
+    text-align: left;
   }
 }
 
