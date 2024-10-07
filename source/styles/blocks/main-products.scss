@@ -128,6 +128,7 @@
 
 .main-products__item-img {
   display: block;
+  width: 100%;
 }
 
 .main-products__item-title {
@@ -258,7 +259,7 @@
     @media (min-width: $tablet-width) {
       width: 60px;
       height: 60px;
-      top: -109px;
+      top: -110px;
       background-image: url("/icons/plus-tablet.svg");
     }
 

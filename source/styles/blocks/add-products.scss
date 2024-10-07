@@ -164,7 +164,7 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
-    gap: 53px;
+    gap: 50px;
   }
 
   @media (min-width: $desktop-width) {
@@ -188,8 +188,13 @@
 }
 
 .add-products__item-price {
+  @media (min-width: $tablet-width) {
+    padding-right: 3px;
+  }
+
   @media (min-width: $desktop-width) {
     min-width: 42px;
+    padding-right: 0;
   }
 }
 
