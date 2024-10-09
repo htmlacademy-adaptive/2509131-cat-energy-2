@@ -2,16 +2,52 @@
   background-color: $bg-light-gray;
 }
 
+.footer__item {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    right: 50%;
+    transform: translateX(50%);
+    width: 100vw;
+    height: 1px;
+    background-color: $light-gray;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
+  &:last-child::after {
+    display: none;
+  }
+}
+
 .footer__logo-link {
-  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  padding-top: 0;
 
   @media (min-width: $tablet-width) {
-    min-width: 168px;
+    padding: 0;
+    margin-right: 38px;
   }
 }
 
 .footer__logo {
   display: block;
+  color: #111111;
+
+  &:hover,
+  &:focus {
+    color: #3e3e3e;
+  }
+
+  &:active {
+    color: #6b6b6b;
+  }
 }
 
 .footer__socials-list {
@@ -19,12 +55,13 @@
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 27px;
+  justify-content: space-between;
+  min-width: 132px;
   align-items: center;
+  gap: 4px;
 
   @media (min-width: $tablet-width) {
-    min-width: 168px;
-    justify-content: center;
+    gap: 6px;
   }
 }
 
@@ -35,9 +72,31 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  padding-top: 10px;
 
   @media (min-width: $tablet-width) {
-    width: 168px;
+    width: 163px;
+    padding-top: 0;
+  }
+}
+
+.footer__htmlacademy-name {
+  font-size: 16px;
+  line-height: 20px;
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+.footer__htmlacademy-logo {
+  &:hover,
+  &:focus {
+    color: $bg-basic-green;
+  }
+
+  &:active {
+    color: rgba(104, 183, 56, 0.3);
   }
 }
 
@@ -45,37 +104,49 @@
   width: 28px;
   height: 22px;
   display: block;
+  padding: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 8px;
+  }
+
+  &:hover,
+  &:focus {
+    color: $bg-basic-green;
+  }
+
+  &:active {
+    color: $bg-basic-green;
+    opacity: 0.3;
+  }
+}
+
+.footer__socials-link::after {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 22px;
+  background-color: #666666;
+}
+
+.footer__socials-link:hover::after {
+  background-color: $bg-basic-green;
 }
 
 .footer__socials-link--vkontakte {
   &::after {
-    content: "";
-    display: block;
     mask-image: url("../../icons/stack.svg#vkontakte");
-    width: 28px;
-    height: 28px;
-    background-color: #666666;
   }
 }
 
 .footer__socials-link--youtube {
   &::after {
-    content: "";
-    display: block;
     mask-image: url("../../icons/stack.svg#youtube");
-    width: 28px;
-    height: 28px;
-    background-color: #666666;
   }
 }
 
 .footer__socials-link--telegram {
   &::after {
-    content: "";
-    display: block;
     mask-image: url("../../icons/stack.svg#telegram");
-    width: 28px;
-    height: 28px;
-    background-color: #666666;
   }
 }

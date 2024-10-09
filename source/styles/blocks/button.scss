@@ -1,14 +1,26 @@
 .button {
   @include button;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .button--big {
   @include button;
   font-size: 20px;
   line-height: 26px;
-  min-width: 256px;
   padding: 15px;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    min-width: 256px;
+  }
 }
 
 .button--main-products-order {
@@ -26,6 +38,14 @@
   padding-bottom: 10px;
   width: 100%;
   margin: 0;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+  }
 }
 
 .button--add-products-order {
@@ -35,6 +55,6 @@
 
   @media (min-width: $desktop-width) {
     grid-column: unset;
-    padding: 10px 91px;
+    padding: 11px 20px 9px;
   }
 }

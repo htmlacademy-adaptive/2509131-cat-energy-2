@@ -17,10 +17,15 @@
   text-align: left;
   color: #000000;
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 34px;
+  position: relative;
+  width: fit-content;
+  background-color: #ffffff;
+  box-shadow: -40px 0 0 0 #ffffff, 40px 0 0 0 #ffffff;
 
   @media (min-width: $tablet-width) {
     margin-left: 40px;
+    margin-bottom: 80px;
     font-size: 32px;
     line-height: 32px;
   }
@@ -30,7 +35,26 @@
     line-height: 40px;
     margin: 0;
     margin-bottom: 80px;
-    margin-left: 59px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    top: 9px;
+    right: 0;
+    height: 2px;
+    background: $bg-basic-green;
+    z-index: -1;
+    box-shadow: 100vw 0 0 0 $bg-basic-green;
+
+    @media (min-width: $tablet-width) {
+      top: 13px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 18px;
+    }
   }
 }
 
@@ -44,12 +68,13 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 70px;
+    border: 1px solid $special-gray;
   }
 
   @media (min-width: $desktop-width) {
     min-width: 896px;
     margin: 0;
-    margin-left: 108px;
+    border: none;
   }
 }
 
@@ -59,21 +84,47 @@
   grid-template-rows: auto;
   padding-top: 13px;
   padding-bottom: 19px;
+  position: relative;
+  border-bottom: 1px solid $special-gray;
 
   @media (min-width: $tablet-width) {
     padding: 26px 38px 28px;
-    grid-template-columns: 1fr 220px;
+    grid-template-columns: 1fr auto;
     align-items: center;
     padding-top: 26px;
     padding-bottom: 28px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: auto 255px 244px;
-    column-gap: 40px;
+    grid-template-columns: auto 285px 244px;
+    column-gap: 42px;
     padding: 0;
-    padding-top: 15px;
+    padding-top: 14px;
     padding-bottom: 17px;
+  }
+
+  &:last-child {
+    border-bottom: 1px solid $special-gray;
+
+    @media (min-width: $tablet-width) {
+      border-bottom: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      border-bottom: 1px solid $special-gray;
+    }
+  }
+
+  &:first-child {
+    border-top: 1px solid $special-gray;
+
+    @media (min-width: $tablet-width) {
+      border-top: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      border-top: 1px solid $special-gray;
+    }
   }
 }
 
@@ -92,7 +143,7 @@
     font-size: 20px;
     line-height: 20px;
     align-self: center;
-    margin-bottom: 25px;
+    margin-bottom: 24px;
   }
 
   @media (min-width: $desktop-width) {
@@ -113,10 +164,19 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 20px;
+    gap: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 7px;
+    gap: 20px;
   }
 }
 
 .add-products__item-description p {
+  margin-top: 12px;
+  margin-bottom: 15px;
+
   @media (min-width: $tablet-width) {
     margin: 0;
     margin-bottom: 22px;
@@ -124,6 +184,20 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+  }
+}
+
+.add-products__item-price {
+  @media (min-width: $tablet-width) {
+    padding-right: 3px;
+    min-width: 40px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 42px;
+    padding-right: 0;
+    text-align: left;
   }
 }
 
@@ -136,6 +210,10 @@
   display: block;
   min-height: 290px;
   position: relative;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(0deg, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/images/gift-background-mobile@2x.jpg");
+  }
 
   &::after {
     content: "";
@@ -162,11 +240,19 @@
   @media (min-width: $tablet-width) {
     background-image: linear-gradient(0deg, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/images/gift-background-tablet@1x.jpg");
     min-height: 200px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(0deg, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/images/gift-background-tablet@2x.jpg");
+    }
   }
 
   @media (min-width: $desktop-width) {
     background-image: linear-gradient(0deg, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/images/gift-background-desctop@1x.jpg");
     min-height: 288px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(0deg, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/images/gift-background-desctop@2x.jpg");
+    }
   }
 }
 
@@ -177,16 +263,18 @@
   text-align: center;
   color: #ffffff;
   margin: 0;
-  padding: 187px 61px 43px 58px;
+  padding: 187px 61px 15px 58px;
 
   @media (min-width: $tablet-width) {
     padding: 0;
     padding-top: 71px;
     padding-right: 125px;
     padding-left: 421px;
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 185px 42px 43px;
+    padding: 185px 25px 43px;
+    text-align: center;
   }
 }
