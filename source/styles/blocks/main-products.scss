@@ -224,6 +224,7 @@
       left: 0;
       bottom: 0;
       border: 1px solid $special-gray;
+      z-index: -1;
     }
 
     @media (min-width: $desktop-width) {
