@@ -256,7 +256,7 @@
   &::before {
     content: "";
     position: absolute;
-    background-image: url("/icons/plus.svg");
+    background-image: url("../../icons/stack.svg#plus");
     width: 30px;
     height: 30px;
     left: 50%;
@@ -267,7 +267,7 @@
       width: 60px;
       height: 60px;
       top: -110px;
-      background-image: url("/icons/plus-tablet.svg");
+      background-image: url("../../icons/stack.svg#plus-tablet");
     }
 
     @media (min-width: $desktop-width) {
