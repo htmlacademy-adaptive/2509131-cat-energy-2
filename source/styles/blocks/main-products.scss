@@ -213,6 +213,11 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
+    min-height: 470px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 460px;
   }
 
   &::before {
