@@ -5,19 +5,20 @@
   <meta charset="UTF-8">
   <title>Функциональное питание для котов "Cat Energy"</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="styles/styles.css" as="style" crossorigin="anonymous">
+  <link rel="preload" href="fonts/lato/lato-regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/apple-icon-180x180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preload" href="fonts/lato/lato-regular.woff2" as="font">
-  <link rel="preload" href="fonts/oswald/oswaldregular.woff2" as="font">
 
 </head>
 
 <body class="page__body">
-  <header class="page__header main-header main-header--no-js">
+  <header class="page__header main-header main-header--no-js" data-test="header">
     <div class="section-container section-container--header">
       <div class="main-header__wrapper">
         <a class="main-header__link" href="#">
@@ -29,7 +30,8 @@
         </a>
         <a class="main-header__link" href="#">
           <picture>
-            <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml" srcset="images/main-header-logo-name.svg">
+            <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml" srcset="images/logo-text-tablet.svg">
+            <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml" srcset="images/logo-text-tablet.svg">
             <img class="main-header__logo-name" src="images/main-header-logo-name.svg" width="101" height="18" alt="Cat Energy.">
           </picture>
         </a>
@@ -59,7 +61,7 @@
     </div>
   </header>
   <main class="page__main">
-    <section class="promo">
+    <section class="promo" data-test="hero">
       <div class="section-container section-container--promo">
         <h1 class="promo__title">Функциональное <br> питание для котов</h1>
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
@@ -74,7 +76,7 @@
         <a class="promo__select-button button" href="program-selection.html">Подобрать программу</a>
       </div>
     </section>
-    <section class="program">
+    <section class="program" data-test="programs">
       <div class="section-container section-container--program">
         <h2 class="visually-hidden">Программы</h2>
         <ul class="program__list">
@@ -91,7 +93,7 @@
         </ul>
       </div>
     </section>
-    <section class="features">
+    <section class="features" data-test="features">
       <div class="section-container section-container--features">
         <h2 class="features__title">Как это работает</h2>
         <ul class="features__list">
@@ -110,7 +112,7 @@
         </ul>
       </div>
     </section>
-    <section class="example">
+    <section class="example" data-test="proof">
       <div class="section-container section-container--example">
         <div class="example__wrapper">
           <h2 class="example__title">Живой пример</h2>
@@ -155,7 +157,7 @@
         </div>
       </div>
     </section>
-    <section class="contacts">
+    <section class="contacts" data-test="contacts">
       <div class="contacts__wrapper">
         <h2 class="visually-hidden">Как нас найти</h2>
         <p class="contacts__intro">Приглашаем <br> к сотрудничеству <br> дилеров!</p>
@@ -179,7 +181,7 @@
       </div>
     </section>
   </main>
-  <footer class="page__footer footer">
+  <footer class="page__footer footer" data-test="footer">
     <div class="section-container section-container--footer">
       <h2 class="visually-hidden">Контакты</h2>
       <a class="footer__item footer__logo-link" href="#top">

@@ -33,7 +33,7 @@
 .features__list {
   list-style: none;
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   gap: 20px;
   margin: 0;
   padding: 0;
