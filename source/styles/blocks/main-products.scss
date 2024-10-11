@@ -23,7 +23,7 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr 1fr;
     gap: 56px 60px;
-    align-items: center;
+    align-items: end;
     justify-content: center;
   }
 

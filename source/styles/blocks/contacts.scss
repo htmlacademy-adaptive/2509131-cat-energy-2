@@ -14,10 +14,10 @@
   padding: 25px 23px 24px 20px;
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 
   @media (min-width: $tablet-width) {
     padding: 59px 70px 60px;
-    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {

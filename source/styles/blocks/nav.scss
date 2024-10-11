@@ -40,7 +40,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 50%;
+    max-width: 600px;
+    justify-content: end;
   }
 }
 
