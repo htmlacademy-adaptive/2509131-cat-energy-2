@@ -28,6 +28,10 @@
     line-height: 24px;
     padding-top: 151px;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 246px;
+  }
 }
 
 .features__list {
