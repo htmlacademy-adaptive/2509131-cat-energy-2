@@ -31,7 +31,7 @@
   @media (min-width: $tablet-width) {
     position: static;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: end;
     gap: 34px;
     row-gap: 10px;
     height: 36px;
@@ -41,7 +41,6 @@
 
   @media (min-width: $desktop-width) {
     max-width: 600px;
-    justify-content: end;
   }
 }
 
